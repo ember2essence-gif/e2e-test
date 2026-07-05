@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ember2Essence — Light Your Spark, Live Your Essence</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg fixed-top e2e-navbar" data-bs-theme="dark">
+    <div class="container-fluid px-4 px-md-5">
+      <a class="navbar-brand" id="navlogo" href="#top"><img src="assets/images/logo.png" alt="Ember2Essence logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav mx-auto gap-4 gap-lg-5">
+          <li class="nav-item"><a class="nav-link" href="#shop">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="#story">Our Story</a></li>
+          <li class="nav-item"><a class="nav-link" href="#purpose">Purpose</a></li>
+          <li class="nav-item"><a class="nav-link" href="#care">Candle Care</a></li>
+          <li class="nav-item d-lg-none"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#candleGuideModal">Candle Guide</a></li>
+        </ul>
+        <a href="#shop" class="e2e-btn e2e-btn-gold d-none d-lg-inline-flex me-3">Shop now</a>
+        <a href="https://www.facebook.com/profile.php?id=100063567231497" target="_blank" class="social-icon">
+          <i class="fab fa-facebook fa-lg"></i>
+        </a>&nbsp;&nbsp;&nbsp;
+        <a href="https://www.instagram.com/ember2essence/" target="_blank" class="social-icon">
+          <i class="fab fa-instagram fa-lg"></i>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero-glow" id="top">
+    <button class="calm-toggle" id="calmBtn" aria-pressed="false" aria-label="Pause the background motion">
+      <span class="calm-dot"></span><span id="calmLabel">Calm mode</span>
+    </button>
+    <div class="glow b"></div>
+    <div class="glow"></div>
+    <div class="container hero-inner">
+      <span class="e2e-eyebrow">Handmade in Australia</span>
+      <h1>Light your spark,<br>live your <em>essence</em>.</h1>
+      <p class="mx-auto">Hand-poured candles made to slow the day down — for pause, grounding, and a quiet return to centre.</p>
+      <div class="d-flex gap-3 justify-content-center flex-wrap">
+        <a href="#shop" class="e2e-btn e2e-btn-gold">Shop the candles</a>
+        <a href="#combo" class="e2e-btn e2e-btn-ghost">The ritual duo →</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- TRUST STRIP -->
+  <div class="e2e-trust">
+    <div class="container">
+      <div class="e2e-trust-inner d-flex justify-content-center flex-wrap gap-3 gap-md-5 text-center">
+        <span>🕯️ <b>Hand-poured</b> in small batches</span>
+        <span>♻️ Reusable <b>clay jars</b></span>
+        <span>🌿 Coco-soy wax &amp; <b>wooden wick</b></span>
+        <span>⏳ <b>~40 hr</b> burn time</span>
+        <span>📦 <b>Free shipping</b> on the duo</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- SHOP -->
+  <section class="e2e-shop" id="shop">
+    <div class="container">
+      <div class="e2e-section-head text-center">
+        <span class="e2e-eyebrow">The Collection</span>
+        <h2>Two candles, two rituals</h2>
+        <p>Each is a single intention in a reusable handmade jar. Choose the one that meets your moment.</p>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- SOMA -->
+        <div class="col-12 col-md-6">
+          <article class="e2e-product-card">
+            <div class="e2e-card-img soma">
+              <!-- <span class="e2e-photo-note">Your photo here</span> -->
+              <span class="e2e-chakra-tag">Crown · White Lotus</span>
+              <!-- <div class="e2e-vessel"></div> -->
+            </div>
+            <div class="e2e-card-body">
+              <h3>Soma <span class="e2e-scent">Lavender</span></h3>
+              <p class="e2e-ritual">"Light Soma at dusk, when the day softens and your spirit asks to be still."</p>
+              <ul class="e2e-specs">
+                <li>360g coco-soy wax · wooden wick</li>
+                <li>Handmade reusable clay jar · 9 × 9 cm</li>
+                <li>Burn time approx. 40 hours</li>
+                <li>Crown chakra · for stillness &amp; rest</li>
+              </ul>
+              <div class="e2e-price-row">
+                <div class="e2e-price">$65<small>+ shipping</small></div>
+                <a href="https://square.link/u/nMs7QadB" target="_blank" class="e2e-btn e2e-btn-dark">Add to cart</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- SATYA -->
+        <div class="col-12 col-md-6">
+          <article class="e2e-product-card">
+            <div class="e2e-card-img satya">
+              <!-- <span class="e2e-photo-note">Your photo here</span> -->
+              <span class="e2e-chakra-tag">Throat · Blue Lotus</span>
+              <!-- <div class="e2e-vessel"></div> -->
+            </div>
+            <div class="e2e-card-body">
+              <h3>Satya <span class="e2e-scent">Black Sand &amp; Cashmere</span></h3>
+              <p class="e2e-ritual">"Light Satya before a difficult conversation, a creative session, or any moment that asks you to show up as your most authentic self."</p>
+              <ul class="e2e-specs">
+                <li>360g coco-soy wax · wooden wick</li>
+                <li>Handmade reusable clay jar · 9 × 9 cm</li>
+                <li>Burn time approx. 40 hours</li>
+                <li>Throat chakra · for clarity &amp; voice</li>
+              </ul>
+              <div class="e2e-price-row">
+                <div class="e2e-price">$65<small>+ shipping</small></div>
+                <a href="https://square.link/u/dmEp4lE7" target="_blank" class="e2e-btn e2e-btn-dark">Add to cart</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+      </div>
+
+      <div class="e2e-reassure d-flex flex-wrap justify-content-center gap-3 gap-md-5">
+        <span>🔧 Faulty or broken? <b>Full refund or replacement</b></span>
+        <span>↩️ Changed your mind? <b>14 days</b>, if unused</span>
+        <span>✉️ Questions answered within <b>2 business days</b></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMBO -->
+  <section class="e2e-combo" id="combo">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-12 col-md-5 order-2 order-md-1">
+          <div class="e2e-combo-art">
+            <div class="v s"></div>
+            <div class="v t"></div>
+          </div>
+        </div>
+        <div class="col-12 col-md-7 order-1 order-md-2">
+          <span class="e2e-eyebrow">Better together</span>
+          <h2>The Ritual Duo</h2>
+          <p>Soma for stillness, Satya for voice — the full arc from quiet rest to showing up. Both candles, free shipping, one calmer home.</p>
+          <span class="e2e-save-badge">Save vs. buying separately</span>
+          <div class="e2e-combo-price">
+            <span class="now">$120</span>
+            <span class="was">$130</span>
+            <span class="ship">+ free shipping</span>
+          </div>
+          <a href="https://square.link/u/O1FI5QE3" target="_blank" class="e2e-btn e2e-btn-gold">Shop the duo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STORY (Our Story, from current About section) -->
+  <section class="e2e-story" id="story">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-12 col-lg-6" data-gsap="fade-left">
+          <span class="e2e-eyebrow">Our Story</span>
+          <h2>Born from a need to pause</h2>
+          <p>At Ember2Essence, we create handmade candles that are more than light — they are symbols of healing, resilience, and ritual. Ember2Essence is a purpose-driven candle brand centered on intentional living, nervous system awareness, and meaningful rituals.</p>
+          <p>Each candle is handmade with care, using premium wax, a wooden wick, and a reusable handmade clay jar. Beyond the product itself, we nurture emotional connection with our customers through small rituals that encourage wellbeing, self-reflection, and restoration.</p>
+          <p id="founder"><span>Founder</span><br>
+          Ember2Essence was born from the founder's personal experience with sensory overwhelm, emotional fatigue, and the need for grounding rituals in daily life. Lighting a candle began as a small but powerful ritual of pause — a way to slow down, reconnect, and restore balance. That personal practice evolved into a brand built around healing, restoration, and intentional moments of calm.</p>
+        </div>
+        <div class="col-12 col-lg-6" data-gsap="fade-right">
+          <div class="e2e-mantra">
+            <p>Our candles aren't about productivity or perfection. They're about <span class="lift">pause</span>. A <span class="lift">reset</span>. A <span class="lift">return to centre</span>.</p>
+            <p class="small">A reminder that calm isn't something you earn — it's something you allow. Not about becoming more "normal." About becoming more aligned.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MANIFESTO (merged from current site) -->
+  <section class="alignment-statement e2e-on-clay">
+    <div class="inner-wrap">
+      <p class="manifesto-top">Our products are not about productivity or perfection.</p>
+      <div class="manifesto-core">
+        <p>They're about <strong>pause.</strong></p>
+        <p>A <strong>reset.</strong></p>
+        <p>A <strong>return to centre.</strong></p>
+      </div>
+      <p class="manifesto-belief">
+        A reminder that calm isn't something you earn—<br>
+        <span>it's something you allow.</span>
+      </p>
+    </div>
+  </section>
+
+  <section class="alignment-breakout">
+    <div class="alignment-container">
+      <div class="statement-block normal-block">
+        <p>This is not about becoming more</p>
+        <h3 class="quote-text strike-through">"normal."</h3>
+      </div>
+      <div class="alignment-divider">
+        <span class="line"></span>
+        <span class="dot"></span>
+        <span class="line"></span>
+      </div>
+      <div class="statement-block aligned-block">
+        <p>It's about becoming more</p>
+        <h2 class="quote-text emphasize">aligned.</h2>
+      </div>
+    </div>
+  </section>
+
+  <!-- PURPOSE -->
+  <section class="e2e-purpose" id="purpose">
+    <div class="container">
+      <div class="e2e-section-head text-center">
+        <span class="e2e-eyebrow">Crafted with Purpose</span>
+        <h2>Beyond the glow</h2>
+        <p>A lasting impact on your home — and our community.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-12 col-md-4">
+          <div class="e2e-pillar">
+            <div class="ic">✨</div>
+            <h3>Made with intention</h3>
+            <p>Not mass-produced. Each candle is hand-poured, eco-friendly, and made to soothe the senses and create a mindful experience.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="e2e-pillar">
+            <div class="ic">🌿</div>
+            <h3>Kinder to the planet</h3>
+            <p>Locally made <b>reusable clay jars</b>, natural coco-soy wax, and wooden wicks — environmental responsibility at every step.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="e2e-pillar">
+            <div class="ic">🤝</div>
+            <h3>Inclusive by design</h3>
+            <p>We partner with <b>QStudio</b> and the <b>Endeavour Foundation</b> to support, mentor, and train people with intellectual and physical disabilities.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARE -->
+  <section class="e2e-care" id="care">
+    <div class="container">
+      <div class="e2e-section-head text-center">
+        <span class="e2e-eyebrow" style="color:var(--e2e-gold)">Candle Care</span>
+        <h2 style="color:var(--e2e-mist)">A better burn</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-12 col-md-4">
+          <h4>✂️ Before lighting</h4>
+          <ul>
+            <li>Place on a heat-resistant surface.</li>
+            <li>Keep away from drafts and flammable objects.</li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4">
+          <h4>🔥 While burning</h4>
+          <ul>
+            <li>Let the first burn reach the edges.</li>
+            <li>Burn for up to 2–3 hours at a time.</li>
+            <li>Never leave unattended.</li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4">
+          <h4>♻️ After use</h4>
+          <ul>
+            <li>Stop when about 10mm of wax remains.</li>
+            <li>Clean and reuse your clay jar.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-center mt-5">
+        <a href="candle-guide.html" class="e2e-btn e2e-btn-ghost">Read the complete guide →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / NEWSLETTER -->
+  <section class="e2e-news">
+    <div class="container">
+      <h3>Stay in the glow</h3>
+      <p class="text-muted mx-auto mb-4" style="max-width:480px;">Be the first to hear about new scents, restocks, and seasonal drops.</p>
+      <form class="row justify-content-center g-3" style="max-width: 560px; margin: 0 auto;" id="subscribeForm" action="https://formsubmit.co/ember2essence@gmail.com" method="POST">
+        <div class="col-md-4">
+          <input type="text" name="name" class="form-control" placeholder="Your name" required>
+        </div>
+        <div class="col-md-4">
+          <input type="email" name="email" class="form-control" placeholder="Your email" required>
+        </div>
+        <input type="hidden" name="_subject" value="New Form submission for Ember2Essence!">
+        <div class="col-md-4">
+          <button type="submit" name="submit" class="btn btn-submit w-100">Subscribe</button>
+        </div>
+      </form>
+      <p class="e2e-fine"><i class="fa fa-lock"></i> Your information is secure and will only be used for updates and promotions</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="e2e-footer">
+    <div class="container">
+      <div class="row gy-4 pb-4" style="border-bottom:1px solid var(--e2e-line-dark)">
+        <div class="col-12 col-md-4">
+          <div class="foot-brand-row">
+            <img src="assets/images/logo.png" alt="Ember2Essence logo">
+            <span>Ember2Essence<sup style="font-size:.5em">™</sup></span>
+          </div>
+          <p>Hand-poured candles for pause, grounding, and a return to centre.</p>
+        </div>
+        <div class="col-6 col-md-2 offset-md-2">
+          <h5>Shop</h5>
+          <a href="#shop">Soma — White Lotus</a>
+          <a href="#shop">Satya — Blue Lotus</a>
+          <a href="#combo">The Ritual Duo</a>
+        </div>
+        <div class="col-6 col-md-2">
+          <h5>Brand</h5>
+          <a href="#story">Our Story</a>
+          <a href="#purpose">Purpose</a>
+          <a href="#care">Candle Care</a>
+        </div>
+        <div class="col-12 col-md-2">
+          <h5>Connect</h5>
+          <a href="https://www.instagram.com/ember2essence/" target="_blank">Instagram</a>
+          <a href="https://www.facebook.com/profile.php?id=100063567231497" target="_blank">Facebook</a>
+          <a href="mailto:connect@ember2essence.com">Contact</a>
+        </div>
+      </div>
+      <div class="foot-bottom d-flex flex-wrap justify-content-between gap-2">
+        <span>© 2025 Ember2Essence™. Hand-poured in Australia.</span>
+        <span>ABN: 97 618 327 752 ·
+          <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Privacy</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- privacy policy modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Ember2Essence Privacy policy</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Ember2Essence collects personal information such as your name and email address solely for the purpose of providing launch updates, early access offers, and relevant brand communications. Your information is stored securely and is never sold or shared with third parties. You may unsubscribe at any time via the links provided in our emails. By joining our waitlist, you consent to this use of your information.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- candle care modal -->
+  <div class="modal fade" id="candleGuideModal" tabindex="-1" aria-labelledby="candleGuideLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0 shadow">
+        <div class="modal-header border-0 pb-0">
+          <h4 class="modal-title fw-semibold" id="candleGuideLabel">🕯️ A Better Candle Experience</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p class="text-muted mb-4">A few simple steps will help your <strong>Ember2Essence</strong> candle burn cleaner, last longer, and deliver its full fragrance.</p>
+          <div class="mb-4">
+            <h6 class="fw-semibold">✂️ Before Lighting</h6>
+            <ul class="small ps-3 mb-0">
+              <li>Trim the wick to <strong>5mm</strong>.</li>
+              <li>Place on a heat-resistant surface.</li>
+              <li>Keep away from drafts and flammable objects.</li>
+            </ul>
+          </div>
+          <div class="mb-4">
+            <h6 class="fw-semibold">🔥 While Burning</h6>
+            <ul class="small ps-3 mb-0">
+              <li>Allow the first burn to reach the edges.</li>
+              <li>Burn for up to <strong>2–3 hours</strong>.</li>
+              <li>Never leave unattended.</li>
+            </ul>
+          </div>
+          <div class="mb-4">
+            <h6 class="fw-semibold">♻️ After Use</h6>
+            <ul class="small ps-3 mb-0">
+              <li>Stop using when about 10mm of wax remains.</li>
+              <li>Clean and reuse your candle jar.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="modal-footer border-0 justify-content-between">
+          <a href="candle-guide.html" class="text-decoration-none">Read Complete Guide →</a>
+          <button class="btn btn-dark px-4" data-bs-dismiss="modal">Got it</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

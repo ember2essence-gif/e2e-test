@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ember2Essence - Candle Guide | Crafted for Tranquil Moments</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg fixed-top e2e-navbar" data-bs-theme="dark">
+    <div class="container-fluid px-4 px-md-5">
+      <a class="navbar-brand" id="navlogo" href="index.html"><img src="assets/images/logo.png" alt="Ember2Essence logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav mx-auto gap-4 gap-lg-5">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#shop">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#story">About</a></li>
+          <li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#candleGuideModal">Candle Guide</a></li>
+        </ul>
+        <a href="https://www.facebook.com/profile.php?id=100063567231497" target="_blank" class="social-icon">
+          <i class="fab fa-facebook fa-lg"></i>
+        </a>&nbsp;&nbsp;&nbsp;
+        <a href="https://www.instagram.com/ember2essence/" target="_blank" class="social-icon">
+          <i class="fab fa-instagram fa-lg"></i>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero-glow" style="padding:150px 0 90px;">
+    <div class="glow b"></div>
+    <div class="glow"></div>
+    <div class="container hero-inner">
+      <span class="e2e-eyebrow">Ember2Essence</span>
+      <h1 style="font-size:clamp(2.2rem,5vw,3.2rem);">A Better Candle Experience</h1>
+      <p class="mx-auto" style="max-width:700px;">
+        Every Ember2Essence candle is crafted to create moments of warmth and comfort.
+        Following these simple care tips will help you enjoy a cleaner burn,
+        stronger fragrance, and a longer-lasting candle.
+      </p>
+    </div>
+  </section>
+
+  <div class="container pb-5" style="margin-top:60px;">
+    <div class="row g-4">
+
+      <div class="col-lg-6">
+        <div class="e2e-pillar h-100">
+          <div class="ic">✂️</div>
+          <h3>Before Lighting</h3>
+          <ul class="mt-3">
+            <li>Place your candle on a stable, heat-resistant surface.</li>
+            <li>Keep away from curtains, drafts, moisture and flammable objects.</li>
+            <li>Ensure the wick remains centered.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="e2e-pillar h-100">
+          <div class="ic">🔥</div>
+          <h3>While Burning</h3>
+          <ul class="mt-3">
+            <li>Allow the first burn to create a full melt pool.</li>
+            <li>Burn for no more than 2–3 hours at a time.</li>
+            <li>Never leave a burning candle unattended.</li>
+            <li>Keep away from children and pets.</li>
+            <li>Do not move the candle while wax is liquid.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="e2e-pillar h-100">
+          <div class="ic">🕯️</div>
+          <h3>Before You Relight</h3>
+          <ul class="mt-3">
+            <li>Remove any wick debris.</li>
+            <li>Re-center the wick if needed.</li>
+            <li>Always trim the wick before lighting again.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="e2e-pillar h-100">
+          <div class="ic">♻️</div>
+          <h3>After Your Candle</h3>
+          <p>Once around 10mm of wax remains, discontinue use.</p>
+          <p>Place warm water in the jar to soften the remaining wax,
+            clean thoroughly, and reuse it as a planter, pen holder,
+            or decorative container.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <section class="py-5 bg-white border-top">
+    <div class="container text-center">
+      <h2 class="fw-semibold">Thank You</h2>
+      <p class="text-muted mx-auto" style="max-width:650px;">
+        Thank you for choosing Ember2Essence. We hope every candle
+        brings warmth, comfort, and beautiful moments to your space.
+      </p>
+      <a href="index.html" class="e2e-btn e2e-btn-dark px-5">Continue Shopping</a>
+    </div>
+  </section>
+
+  <!-- CTA / NEWSLETTER -->
+  <section class="e2e-news">
+    <div class="container">
+      <h3>Stay Connected</h3>
+      <form class="row justify-content-center g-3" style="max-width: 560px; margin: 30px auto 0;" id="subscribeForm" action="https://formsubmit.co/ember2essence@gmail.com" method="POST">
+        <div class="col-md-4">
+          <input type="text" name="name" class="form-control" placeholder="Your name" required>
+        </div>
+        <div class="col-md-4">
+          <input type="email" name="email" class="form-control" placeholder="Your email" required>
+        </div>
+        <input type="hidden" name="_subject" value="New Form submission for Ember2Essence!">
+        <div class="col-md-4">
+          <button type="submit" name="submit" class="btn btn-submit w-100">Subscribe</button>
+        </div>
+      </form>
+      <p class="e2e-fine"><i class="fa fa-lock"></i> Your information is secure and will only be used for updates and promotions</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="e2e-footer">
+    <div class="container">
+      <div class="row gy-4 pb-4" style="border-bottom:1px solid var(--e2e-line-dark)">
+        <div class="col-12 col-md-4">
+          <div class="foot-brand-row">
+            <img src="assets/images/logo.png" alt="Ember2Essence logo">
+            <span>Ember2Essence<sup style="font-size:.5em">™</sup></span>
+          </div>
+          <p>Hand-poured candles for pause, grounding, and a return to centre.</p>
+        </div>
+        <div class="col-6 col-md-2 offset-md-2">
+          <h5>Shop</h5>
+          <a href="index.html#shop">Soma — White Lotus</a>
+          <a href="index.html#shop">Satya — Blue Lotus</a>
+          <a href="index.html#combo">The Ritual Duo</a>
+        </div>
+        <div class="col-6 col-md-2">
+          <h5>Brand</h5>
+          <a href="index.html#story">Our Story</a>
+          <a href="index.html#purpose">Purpose</a>
+          <a href="index.html#care">Candle Care</a>
+        </div>
+        <div class="col-12 col-md-2">
+          <h5>Connect</h5>
+          <a href="https://www.instagram.com/ember2essence/" target="_blank">Instagram</a>
+          <a href="https://www.facebook.com/profile.php?id=100063567231497" target="_blank">Facebook</a>
+          <a href="mailto:connect@ember2essence.com">Contact</a>
+        </div>
+      </div>
+      <div class="foot-bottom d-flex flex-wrap justify-content-between gap-2">
+        <span>© 2025 Ember2Essence™. Hand-poured in Australia.</span>
+        <span>ABN: 97 618 327 752 ·
+          <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Privacy</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- privacy policy modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Ember2Essence Privacy policy</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Ember2Essence collects personal information such as your name and email address solely for the purpose of providing launch updates, early access offers, and relevant brand communications. Your information is stored securely and is never sold or shared with third parties. You may unsubscribe at any time via the links provided in our emails. By joining our waitlist, you consent to this use of your information.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- candle care modal -->
+  <div class="modal fade" id="candleGuideModal" tabindex="-1" aria-labelledby="candleGuideLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0 shadow">
+        <div class="modal-header border-0 pb-0">
+          <h4 class="modal-title fw-semibold" id="candleGuideLabel">🕯️ A Better Candle Experience</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p class="text-muted mb-4">A few simple steps will help your <strong>Ember2Essence</strong> candle burn cleaner, last longer, and deliver its full fragrance.</p>
+          <div class="mb-4">
+            <h6 class="fw-semibold">✂️ Before Lighting</h6>
+            <ul class="small ps-3 mb-0">
+              <li>Trim the wick to <strong>5mm</strong>.</li>
+              <li>Place on a heat-resistant surface.</li>
+              <li>Keep away from drafts and flammable objects.</li>
+            </ul>
+          </div>
+          <div class="mb-4">
+            <h6 class="fw-semibold">🔥 While Burning</h6>
+            <ul class="small ps-3 mb-0">
+              <li>Allow the first burn to reach the edges.</li>
+              <li>Burn for up to <strong>2–3 hours</strong>.</li>
+              <li>Never leave unattended.</li>
+            </ul>
+          </div>
+          <div class="mb-4">
+            <h6 class="fw-semibold">♻️ After Use</h6>
+            <ul class="small ps-3 mb-0">
+              <li>Stop using when about 10mm of wax remains.</li>
+              <li>Clean and reuse your candle jar.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="modal-footer border-0 justify-content-between">
+          <a href="candle-guide.html" class="text-decoration-none">Read Complete Guide →</a>
+          <button class="btn btn-dark px-4" data-bs-dismiss="modal">Got it</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/script.js"></script>
+
+</body>
+</html>
